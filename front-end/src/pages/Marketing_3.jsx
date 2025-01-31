@@ -1,11 +1,11 @@
 import React from 'react';
-import headphone from '../assets/headphone.png';
-import headphone2 from '../assets/headphone2.png';
-import headphone3 from '../assets/headphone3.png';
-import headphone4 from '../assets/headphone4.png';
-import earphone from '../assets/earphone.png';
+import speaker from '../assets/speaker.png';
+import smartwatch from '../assets/smartwatch.png';
+import laptop from '../assets/laptop.png';
+import camera from '../assets/camera.png';
+import iphone from '../assets/iphone.png';
 
-const Marketing_2 = () => {
+const Marketing_3 = () => {
   return (
     <section className="h-auto lg:h-[90vh] py-16 px-8 bg-gradient-to-br from-gray-300 via-gray-150 to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-750 rounded-[2.5rem] relative overflow-hidden">
       {/* Background Effects */}
@@ -18,39 +18,38 @@ const Marketing_2 = () => {
         <div className="md:col-span-6 lg:col-span-7 flex flex-col justify-center z-10">
           <div className="mb-6 inline-flex items-center px-4 py-2 bg-blue-100 dark:bg-blue-900/30 rounded-full">
             <span className="animate-pulse w-2 h-2 bg-blue-600 rounded-full mr-2" />
-            <span className="text-blue-600 dark:text-blue-400 font-medium">Special Offer</span>
+            <span className="text-blue-600 dark:text-blue-400 font-medium">New Arrivals</span>
           </div>
 
           <h1 className="mb-6 text-4xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white md:text-5xl xl:text-6xl">
-            Limited Time Offer!
+            Explore Our Latest Collection
             <br />
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
-              Up to 40% OFF!
+              Up to 30% OFF!
             </span>
           </h1>
           <p className="mb-8 text-gray-600 dark:text-gray-400 md:text-lg lg:text-xl max-w-2xl leading-relaxed">
-            Don't Wait - Limited Stock at Unbeatable Prices! Experience premium sound quality with our exclusive collection.
+            Upgrade your lifestyle with our newest arrivals. From smart gadgets to powerful devices, we have it all.
           </p>
           <div className="flex flex-wrap gap-4">
             <a
-                  href="#"
-                  className="bg-white px-8 py-4 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-xl font-semibold text-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl focus:ring-4 focus:ring-gray-300/50 dark:focus:ring-gray-700"
+              href="#"
+              className="bg-white px-8 py-4 border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 rounded-xl font-semibold text-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl focus:ring-4 focus:ring-gray-300/50 dark:focus:ring-gray-700"
             >
               Shop now →
-             </a>
-            
+            </a>
           </div>
         </div>
 
-        {/* Dynamic Image Layout */}
+        {/* Image Layout */}
         <div className="md:col-span-6 lg:col-span-5 relative h-[600px] mt-12 md:mt-0">
           {/* Main center image */}
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 transform transition-all duration-300 hover:scale-105">
             <div className="relative">
               <div className="absolute" />
               <img
-                src={headphone}
-                alt="Premium headphones"
+                src={speaker}
+                alt="Wireless Speaker"
                 className="w-[400px] md:w-96 h-auto relative z-10  p-4"
               />
             </div>
@@ -59,32 +58,30 @@ const Marketing_2 = () => {
           {/* Surrounding images */}
           <div className="absolute right-8 top-4 z-10 w-[250px] md:w-64 transform transition-all duration-300 hover:scale-105">
             <img
-              src={headphone2}
-              alt="Headphone 2"
-              className="p-3"
+              src={smartwatch}
+              alt="Smartwatch"
+              className="backdrop-blur-sm p-3"
             />
           </div>
           <div className="absolute left-8 bottom-8 z-10 w-[250px] md:w-64 transform transition-all duration-300 hover:scale-105">
             <img
-              src={headphone3}
-              alt="Headphone 3"
-              className="p-3"
+              src={laptop}
+              alt="Laptop"
+              className="backdrop-blur-sm p-3"
             />
           </div>
-          <div className="absolute left-4 top-12 z-0 w-[250px] md:w-64 transform transition-all duration-300 hover:scale-105">
+          <div className="absolute left-4 top-12 z-0 w-[200px] md:w-56 transform transition-all duration-300 hover:scale-105 opacity-90">
             <img
-              src={headphone4}
-              alt="Headphone 4"
-              className="p-3"
+              src={camera}
+              alt="Camera"
+              className="backdrop-blur-sm p-3"
             />
           </div>
-
-          {/* Extra Images */}
-          <div className="absolute right-4 bottom-4 z-10w-[200px] md:w-56 transform transition-all duration-300 hover:scale-105 opacity-90">
+          <div className="absolute right-5 bottom-20 z-10 w-[200px] md:w-56 transform transition-all duration-300 hover:scale-105 opacity-90">
             <img
-              src={earphone}
-              alt="Earphone"
-              className="p-3"
+              src={iphone}
+              alt="iPhone"
+              className="backdrop-blur-sm p-3"
             />
           </div>
         </div>
@@ -93,4 +90,4 @@ const Marketing_2 = () => {
   );
 };
 
-export default Marketing_2;
+export default Marketing_3;
