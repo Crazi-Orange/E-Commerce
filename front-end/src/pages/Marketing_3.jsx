@@ -13,7 +13,8 @@ const Marketing_3 = () => {
       <div className="absolute -left-24 -top-24 w-96 h-96 bg-blue-200 dark:bg-blue-900/20 rounded-full blur-3xl opacity-30" />
       <div className="absolute -right-24 -bottom-24 w-96 h-96 bg-purple-200 dark:bg-purple-900/20 rounded-full blur-3xl opacity-30" />
 
-      <div className="mx-auto max-w-screen-xl px-8 grid md:grid-cols-12 lg:gap-12 xl:gap-0 relative z-10 h-full">
+      {/* Page Content (Blurred) */}
+      <div className="mx-auto max-w-screen-xl px-8 grid md:grid-cols-12 lg:gap-12 xl:gap-0 relative z-10 h-full backdrop-blur-sm">
         {/* Content Side */}
         <div className="md:col-span-6 lg:col-span-7 flex flex-col justify-center z-10">
           <div className="mb-6 inline-flex items-center px-4 py-2 bg-blue-100 dark:bg-blue-900/30 rounded-full">
@@ -50,7 +51,7 @@ const Marketing_3 = () => {
               <img
                 src={speaker}
                 alt="Wireless Speaker"
-                className="w-[400px] md:w-96 h-auto relative z-10  p-4"
+                className="w-[400px] md:w-96 h-auto relative z-10 p-4"
               />
             </div>
           </div>
@@ -83,6 +84,26 @@ const Marketing_3 = () => {
               alt="iPhone"
               className="backdrop-blur-sm p-3"
             />
+          </div>
+        </div>
+      </div>
+
+      {/* Coming Soon Overlay */}
+      <div className="absolute inset-0 flex items-center justify-center backdrop-blur-md z-20">
+        <div className="text-center bg-white/80 dark:bg-gray-900/80 p-12 rounded-3xl shadow-2xl border border-white/20 dark:border-gray-800/20">
+          <h1 className="text-6xl md:text-8xl font-extrabold text-gray-900 dark:text-white mb-8">
+            Coming Soon
+          </h1>
+          <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
+            We're working on something amazing! Stay tuned for updates and be the first to know when we launch.
+          </p>
+          <div className="mt-8">
+            <a
+              href="#"
+              className="inline-block px-8 py-4 bg-blue-600 text-white rounded-xl font-semibold text-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl focus:ring-4 focus:ring-blue-300/50"
+            >
+              Notify Me →
+            </a>
           </div>
         </div>
       </div>
